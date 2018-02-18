@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            This is our form page!
+        </title>
+    </head>
+    <body>
+        <ul>
+            <strong> 
+                    Team Members: 
+            </strong>
+            <% for(var i = 0; i < data.length; i++){ %>
+                <li>
+                    <%=data[i].toObject().Name%>
+                </li>
+            <% } %>
+        </ul>
+    </body>
+</html>
